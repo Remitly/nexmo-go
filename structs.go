@@ -178,3 +178,15 @@ type GetPhoneOutboundPricingResponse struct {
 	CountryCode string `json:"country-code,omitempty"`
 	Price       string `json:"price,omitempty"`
 }
+
+type DeliveryReceipt struct {
+	MSISDN           string `json:"msisdn"`
+	To               string `json:"to"`
+	NetworkCode      string `json:"network-code"`
+	MessageID        string `json:"messageId"`
+	Price            string `json:"price"`
+	Status           string `json:"status"`
+	SCTS             string `json:"scts"`
+	ErrCode          string `json:"err-code"`
+	MessageTimestamp string `json:"message-timestamp"`
+}
