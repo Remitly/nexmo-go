@@ -189,4 +189,5 @@ type DeliveryReceipt struct {
 	SCTS             string `json:"scts"`
 	ErrCode          string `json:"err-code"`
 	MessageTimestamp string `json:"message-timestamp"`
+	ClientRef        string `json:"client-ref"`
 }
